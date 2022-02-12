@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.knightzz.mapper.ProductsMapper">
+
+    <resultMap id="BaseResultMap" type="cn.knightzz.entity.Products">
+            <id property="id" column="id" jdbcType="INTEGER"/>
+            <result property="name" column="NAME" jdbcType="VARCHAR"/>
+            <result property="price" column="price" jdbcType="DOUBLE"/>
+            <result property="flag" column="flag" jdbcType="VARCHAR"/>
+            <result property="goodsDesc" column="goods_desc" jdbcType="VARCHAR"/>
+            <result property="images" column="images" jdbcType="VARCHAR"/>
+            <result property="goodsStock" column="goods_stock" jdbcType="INTEGER"/>
+            <result property="goodsType" column="goods_type" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,NAME,price,
+        flag,goods_desc,images,
+        goods_stock,goods_type
+    </sql>
+</mapper>

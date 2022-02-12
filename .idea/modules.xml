@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/lg-parent/lg-cloud-eureka/lg-cloud-eureka.iml" filepath="$PROJECT_DIR$/lg-parent/lg-cloud-eureka/lg-cloud-eureka.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lg-parent/lg-parent.iml" filepath="$PROJECT_DIR$/lg-parent/lg-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lg-parent/lg-service-common/lg-service-common.iml" filepath="$PROJECT_DIR$/lg-parent/lg-service-common/lg-service-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lg-parent/lg-service-page/lg-service-page.iml" filepath="$PROJECT_DIR$/lg-parent/lg-service-page/lg-service-page.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lg-parent/lg-service-product/lg-service-product.iml" filepath="$PROJECT_DIR$/lg-parent/lg-service-product/lg-service-product.iml" />
+    </modules>
+  </component>
+</project>

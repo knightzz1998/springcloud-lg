@@ -1,0 +1,5 @@
+# Project exclude paths
+/lg-parent/lg-cloud-eureka/target/
+/lg-parent/lg-service-common/target/
+/lg-parent/lg-service-page/target/
+/lg-parent/lg-service-product/target/

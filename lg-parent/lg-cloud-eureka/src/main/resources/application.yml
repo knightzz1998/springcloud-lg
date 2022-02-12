@@ -1,0 +1,27 @@
+# Eureka server服务端口
+server:
+  port: 9200
+spring:
+  application:
+    # 应用名称，会在Eureka中作为服务的id标识
+    name: lg-cloud-eureka-server
+eureka:
+  instance:
+    # 租约续约间隔时间，默认30秒
+    lease-renewal-interval-in-seconds: 30
+    # 租约到期，服务时效时间，默认值90秒,服务超过90秒没有发生心跳，EurekaServer会将服务从列 表移除
+    lease-expiration-duration-in-seconds: 90
+    hostname: 127.0.0.1
+    metadata-map:
+      ip: 192.168.200.128
+      port: 10000
+      user: admin
+      pwd: 123456
+  client:
+    # 客户端与EurekaServer交互的地址，如果是集群，也需要写其它Server的地址
+    service-url:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+    # 自己就是服务不需要注册自己
+    register-with-eureka: false
+    # 自己就是服务不需要从Eureka Server获取服务信息,默认为true，置 为false
+    fetch-registry: false
